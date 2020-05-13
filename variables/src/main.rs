@@ -1,7 +1,9 @@
 fn main() {
     
 
-    let temp = 34; 
+    let mut temp = 34; 
+
+    temp = 30; 
 
     println!("{}", temp); 
 
