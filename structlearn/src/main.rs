@@ -21,7 +21,7 @@ fn main() {
         available:true,
     };
 
-    let bool_2 = Book
+    let mut bool_2 = Book
     {
         name:String::from("Book 2"), 
         author:String::from("sadiq"),
@@ -30,8 +30,29 @@ fn main() {
     };
 
 
+    bool_2.name = String::from("Book 2 update"); 
+
+    let book_3 = build(String::from("Hello"), String::from("author")); 
+
     println!("{:#?}", bool_1); 
     println!("{:#?}", bool_2); 
+    println!("{:#?}", book_3); 
     
+
+}
+
+
+
+fn build (name:String, author:String) -> Book
+{
+
+    Book
+    
+    {
+        name, 
+        author,
+        price:50,
+        available:false,
+    }
 
 }
