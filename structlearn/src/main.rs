@@ -34,9 +34,20 @@ fn main() {
 
     let book_3 = build(String::from("Hello"), String::from("author")); 
 
+
+    let book_4 = Book
+    {
+        name:String::from("Book 4"), 
+        author:String::from("sadiq"),
+        ..bool_1
+        
+    };
+
+
     println!("{:#?}", bool_1); 
     println!("{:#?}", bool_2); 
     println!("{:#?}", book_3); 
+    println!("{:#?}", book_4); 
     
 
 }
